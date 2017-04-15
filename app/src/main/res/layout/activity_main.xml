@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout style="@style/columnStyle">
+
+        <TextView
+            style="@style/TeamName"
+            android:text="@string/real_madrid" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/layoutStyle">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/goalsStyle"
+                android:text="@string/goals" />
+
+            <TextView
+                android:id="@+id/goalsMadrid"
+                style="@style/goalsStyle"
+                android:text="@string/zero" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/scoreGoalMadrid"
+            style="@style/layoutStyle"
+            android:onClick="scoreGoal"
+            android:text="@string/score_goal" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/layoutStyle">
+
+            <TextView
+                style="@style/goalsStyle"
+                android:text="@string/fouls" />
+
+            <TextView
+                android:id="@+id/foulsMadrid"
+                style="@style/goalsStyle"
+                android:text="@string/zero" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addFoulMadridButton"
+            style="@style/layoutStyle"
+            android:onClick="addFoul"
+            android:text="@string/add_foul" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/columnStyle">
+
+        <TextView
+            style="@style/TeamName"
+            android:text="@string/fc_barcelona" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/layoutStyle">
+
+            <TextView
+                style="@style/goalsStyle"
+                android:text="@string/goals" />
+
+            <TextView
+                android:id="@+id/goalsBarcelona"
+                style="@style/goalsStyle"
+                android:text="@string/zero" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/scoreGoalBarcelona"
+            style="@style/layoutStyle"
+            android:text="@string/score_goal"
+            android:onClick="scoreGoal"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/layoutStyle">
+
+            <TextView
+                style="@style/goalsStyle"
+                android:text="@string/fouls" />
+
+            <TextView
+                android:id="@+id/foulsBarcelona"
+                style="@style/goalsStyle"
+                android:text="@string/zero" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addFoulBarcelonaButton"
+            style="@style/layoutStyle"
+            android:text="@string/add_foul"
+            android:onClick="addFoul"/>
+    </LinearLayout>
+
+</LinearLayout>
+    <Button
+        android:id="@+id/resetButton"
+        android:text="@string/reset"
+        android:onClick="reset"
+        style="@style/resetButtonStyles" />
+</LinearLayout>
